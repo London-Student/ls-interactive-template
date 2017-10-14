@@ -1,4 +1,9 @@
 import style from '../styles/main.scss';
 
-var body = document.querySelector('body');
-body.textContent = "Hello World";
+var template = require("../templates/test.handlebars");
+
+document.addEventListener("DOMContentLoaded", function() {
+  var div = document.createElement('div');
+  div.innerHTML = template();
+  document.body.appendChild(div);
+});

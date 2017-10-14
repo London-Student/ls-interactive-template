@@ -13,7 +13,7 @@ module.exports = {
     output: {
         filename: './dist/scripts/[name].js'
     },
-    devtool: 'source-map', 
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -40,6 +40,10 @@ module.exports = {
                         fallback: "style-loader" // used when css not extracted
                     }
                 ))
+            },
+            {
+                test: /\.handlebars$/,
+                loader: "handlebars-loader"
             }
         ]
     },

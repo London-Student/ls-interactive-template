@@ -1,5 +1,7 @@
 $background-colour: white;
 
-body {
-    background-color: $background-colour;
-}
+@import
+    "header",
+    "footer",
+    "body"
+;

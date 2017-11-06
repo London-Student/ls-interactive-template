@@ -2,8 +2,12 @@ $header-colour: #ffffff;
 $background-colour: #f4f4f4;
 $footer-colour: #ffffff;
 
+html {
+  font-size: 100%;
+}
+
 @import
-    "header",
-    "footer",
-    "body"
+  "header",
+  "footer",
+  "body"
 ;

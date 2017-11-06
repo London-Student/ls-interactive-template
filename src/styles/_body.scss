@@ -1,3 +1,5 @@
+/* Article Body */
+
 body {
   background-color: $background-colour;
   margin: 0;
@@ -7,4 +9,16 @@ body {
   margin: 2em auto;
   max-width: 1050px;
   text-align: center;
+}
+
+/* Article Meta */
+
+.article-meta {
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  max-width: 720px;
+  margin: 0 auto 20px;
 }

@@ -6,13 +6,17 @@
         {{title}}
       </h1>
       <div class="byline">
-        <span>By</span>
-        <span>{{author}}</span>
+        <div class="byline-authors">
+          <span>By</span>
+          <a class="byline-author" href="#">{{author}}</a>
+        </div>
         <time>{{datePublished}}</time>
       </div>
     </div>
     <div class="article-body">
-      {{message}}
+      {{#each paragraphs}}
+        <p>{{this}}</p>
+      {{/each}}
     </div>
   </div>
 </section>

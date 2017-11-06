@@ -8,17 +8,44 @@ body {
 .body-content {
   margin: 2em auto;
   max-width: 1050px;
-  text-align: center;
+}
+
+.article-body p {
+  line-height: 1.4;
+  margin: 0 auto 15px;
+  max-width: 460px;
+  font-family: 'Source Sans Pro', serif;
+  font-size: 1.1rem;
 }
 
 /* Article Meta */
 
 .article-meta {
+  font-family: 'Source Serif Pro', serif;
   padding: 0 25px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .article-title {
   max-width: 720px;
   margin: 0 auto 20px;
+  font-size: 2rem;
+}
+
+.byline-authors, time {
+  font-size: 0.9rem;
+}
+
+.byline-authors {
+  font-weight: bold;
+}
+
+.byline-authors a {
+  text-decoration: none;
+  color: black;
+}
+
+.byline-authors a:hover {
+  text-decoration: underline;
 }

@@ -5,7 +5,7 @@ var headTemplate = require("../templates/head.handlebars");
 
 document.addEventListener("DOMContentLoaded", function() {
   document.body.innerHTML = bodyTemplate({
-    title: "London Student has given thousands of young journalists the chance to write and report on their campuses",
+    title: "London Student has given thousands of young journalists a chance",
     author: "Cale Tilford",
     datePublished: "Nov 6, 2017",
     paragraphs: [

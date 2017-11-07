@@ -14,20 +14,21 @@ body {
   line-height: 1.4;
   margin: 0 auto 15px;
   max-width: 460px;
-  font-family: 'Source Sans Pro', serif;
+  font-family: $body-font;
   font-size: 1.1rem;
 }
 
 /* Article Meta */
 
 .article-meta {
-  font-family: 'Source Serif Pro', serif;
+  font-family: $meta-font;
   padding: 0 25px;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .article-title {
+  font-family: $heading-font;
   max-width: 720px;
   margin: 0 auto 20px;
   font-size: 2rem;

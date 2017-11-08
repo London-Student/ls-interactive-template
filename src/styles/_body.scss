@@ -18,10 +18,20 @@ body {
   font-size: 1.1rem;
 }
 
+.centered-svg {
+  text-align: center;
+}
+
+.centered-svg svg {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: red;
+}
+
 /* Article Footnote */
 
 .article-footnote {
-  margin-top: 20px;
+  padding-top: 20px;
   line-height: 1.8;
   margin: 0 auto 15px;
   max-width: 600px;
@@ -31,6 +41,19 @@ body {
 }
 
 /* Article Meta */
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.social-links a:hover {
+  opacity: 0.5;
+}
 
 .article-meta {
   font-family: $meta-font;

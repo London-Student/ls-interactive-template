@@ -2,6 +2,14 @@
 <section>
   <div class="body-content">
     <div class="article-meta">
+      <div class="social-links">
+        <a href="#">
+          <img width="16" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@1.2.7/icons/twitter.svg" />
+        </a>
+        <a href="#">
+          <img width="16" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@1.2.7/icons/facebook.svg" />
+        </a>
+      </div>
       <h1 class="article-title">
         {{title}}
       </h1>
@@ -15,7 +23,13 @@
     </div>
     <div class="article-body">
       {{#each paragraphs}}
-        <p>{{this}}</p>
+        {{#if svg}}
+          <div class="centered-svg">
+            <svg width='{{this.width}}' height='{{this.height}}'></svg>
+          </div>
+        {{else}}
+          <p>{{{this.text}}}</p>
+        {{/if}}
       {{/each}}
     </div>
     <div class="article-footnote">

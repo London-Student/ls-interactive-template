@@ -1,11 +1,28 @@
+// Colours
 $header-colour: #ffffff;
 $background-colour: #f4f4f4;
 $footer-colour: #ffffff;
 
+// Main fonts
 $heading-font: 'Source Serif Pro', serif;
 $meta-font: sans-serif;
 $body-font: 'Source Sans Pro', serif;
 
+// Width of content area
+$content-width: 1000px;
+$inner-content-width: 600px;
+
+// Mobile content area width
+$on-palm: 600px;
+
+// Define media-query
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Base font size
 html {
   font-size: 100%;
 }

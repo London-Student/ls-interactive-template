@@ -9,3 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.body.innerHTML = bodyTemplate(articleData);
   document.head.innerHTML = document.head.innerHTML + headTemplate(articleData);
 });
+
+const visualisation = require('../../static/scripts/visualisation.js');
+visualisation();
+

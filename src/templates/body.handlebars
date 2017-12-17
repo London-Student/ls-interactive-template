@@ -28,7 +28,7 @@
       {{#each paragraphs}}
         {{#if svg}}
           <div class="centered-svg">
-            <svg width='{{this.width}}' height='{{this.height}}'></svg>
+            <svg id='{{this.id}}' width='{{this.width}}' height='{{this.height}}'></svg>
           </div>
         {{else}}
           <p>{{{this.text}}}</p>
